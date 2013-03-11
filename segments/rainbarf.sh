@@ -7,7 +7,7 @@ run_segment() {
 	fi
 
     # Customize via ~/.rainbarf.conf
-	stats=$(rainbarf --tmux)
+	stats=$(rainbarf --tmux --bright --width 10) 
 	if [ -n "$stats" ]; then
 		echo "$stats";
 	fi
